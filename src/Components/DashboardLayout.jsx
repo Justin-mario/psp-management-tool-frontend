@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import TopNav from './TopNav'
 import VerticalDasboard from './VerticalDasboard'
 
@@ -12,7 +13,9 @@ const DashboardLayout = (props) => {
         <div className="header">
           <TopNav/>
         </div>
-        {props.children}
+        <div>
+          <Outlet/>
+        </div>
       </div>
     </div>
   )

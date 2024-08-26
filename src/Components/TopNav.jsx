@@ -58,13 +58,12 @@ const TopNav = () => {
                 aria-labelledby="dropdownMenuButton2"
               >
                 <li>
-                  <a
-                    className="p-2 flex text-center justify-center text-gray-600 hover:text-black"
-                    href="#"
+                  <button
+                    className="p-2 flex text-center justify-center text-gray-600 hover:text-black bg-white"
                     onClick={handleLogout}
                   >
                     Logout
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
