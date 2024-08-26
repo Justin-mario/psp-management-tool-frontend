@@ -23,16 +23,19 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/developer-signin" element={<DeveloperSignin />} />
-          <Route element={<DashboardLayout/>}>
-            <Route path="/dashboard" element={<AdminDashboard />} exact />
-            <Route path="/admin/create-developer" element={<DeveloperSignUp />} />
-            <Route path="/change-password" element={<DevPassword />} />
-            <Route path="/admin/create-project" element={<CreateProject />} />
-            <Route path="/dev/allprojects" element={<ProjectsPage />} />
-            <Route path="/admin/allprojects" element={<AdminProjects />} />
-            <Route path="/dev/alldefects" element={<DeveloperDefectPage />} />
-            <Route path="/admin/alldefects" element={<AdminDefectsPage />} />
-            <Route path="/project/create-defect/:id" element={<CreateDefect />} />
+          <Route element={<DashboardLayout/>} children={
+            <>
+              <Route path="/dashboard" element={<AdminDashboard />} exact />
+              <Route path="/admin/create-developer" element={<DeveloperSignUp />} />
+              <Route path="/change-password" element={<DevPassword />} />
+              <Route path="/admin/create-project" element={<CreateProject />} />
+              <Route path="/dev/allprojects" element={<ProjectsPage />} />
+              <Route path="/admin/allprojects" element={<AdminProjects />} />
+              <Route path="/dev/alldefects" element={<DeveloperDefectPage />} />
+              <Route path="/admin/alldefects" element={<AdminDefectsPage />} />
+              <Route path="/project/create-defect/:id" element={<CreateDefect />} />
+            </>
+          }>
           </Route>
         </Routes>
       </Router>
