@@ -1,10 +1,10 @@
 import React from 'react'
-import VerticalDasboard from '../Components/VerticalDasboard'
+//import VerticalDasboard from '../Components/VerticalDasboard'
 
 const AdminDashboard = () => {
   return (
     <div>
-        <VerticalDasboard/>
+        Write up coming soon
     </div>
   )
 }

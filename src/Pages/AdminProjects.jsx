@@ -34,7 +34,7 @@ const AdminProjects = () => {
   }, [dispatch])
   
   return (
-    <div className='max-w-screen-xl mx-auto py-10 px-4 lg:px-0'>
+    <div className=''>
       <div className='flex item-center justify-between pb-10'>
         <h2 className='text-2xl text-primeColor font-bold'>PROJECTS</h2>
         <div className='flex items-center gap-12'>

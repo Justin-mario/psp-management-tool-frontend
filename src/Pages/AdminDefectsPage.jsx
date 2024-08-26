@@ -20,7 +20,7 @@ const AdminDefectsPage = () => {
         dispatch(adminGetProjects())
       }, [dispatch])
   return (
-    <div className='max-w-screen-xl mx-auto py-10 px-4 lg:px-0'>
+    <>
         <h2 className='text-2xl text-primeColor font-bold mb-8'>DEFECTS</h2>
         <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -53,7 +53,7 @@ const AdminDefectsPage = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 

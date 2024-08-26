@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = (props) => {
   return (
-    <div className='w-[50%] md:mx-auto pt-[10rem] px-4 md:px-0'>
+    <>
         <h2 className=' text-3xl font-bold mb-7'>{props.title}</h2>
         <form onSubmit={props.onSubmit}>
             <div className='flex flex-col'>
@@ -58,7 +58,7 @@ const Project = (props) => {
                 </div>
             </div>
         </form>
-    </div>
+    </>
   )
 }
 
