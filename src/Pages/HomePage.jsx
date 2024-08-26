@@ -19,7 +19,7 @@ const HomePage = () => {
     // console.log("You clicked on the submit button")
     if (!companyName && !username && !email && !password) {
       toast.error("Please fill all fields correctly");
-    }else if(password.length !== 6){
+    }else if(password.length < 8){
       toast.error("Password cannot be less than 8 characters");
     } else {
       let user = { username, email, password, companyName };
@@ -53,7 +53,7 @@ const HomePage = () => {
 
   return (
     <div className="w-[50%] md:mx-auto pt-[10rem] px-4 md:px-0">
-      <h3 className='text-3xl font-bold mb-7'>PSP Management Tool</h3>
+      <h1 className='text-3xl font-bold mb-7'>PSP Management Tool</h1>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col">
           <div className="lg:mb-10 mb-6">

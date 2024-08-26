@@ -38,73 +38,6 @@ const AdminDashboard = () => {
           By providing a framework for measuring and analyzing personal performance, PSP enables software engineers to understand their own processes better and make data-driven improvements over time.
         </p>
       </Section>
-
-      <Section title="Introduction to the System">
-        <p>
-          Welcome to the PSP Management Tool, designed to help you implement the Personal Software Process (PSP) in your software development work. This tool focuses on PSP0 and PSP0.1, providing a foundation for disciplined software development practices.
-        </p>
-      </Section>
-
-      <Section title="System Overview">
-        <p className="mb-4">Our PSP Management Tool offers the following key functionalities:</p>
-        <ol className="list-decimal list-inside mb-4 pl-4">
-          <li>User Management</li>
-          <li>Project Management</li>
-          <li>Time Tracking</li>
-          <li>Defect Logging</li>
-          <li>Data Visualization</li>
-          <li>Tutorial System</li>
-        </ol>
-        <p>Let's explore how to use each of these features.</p>
-
-        <SubSection title="1. User Management">
-          <ul className="list-disc list-inside pl-4">
-            <li><strong>Registration:</strong> Sign up with your email, username, and password. You'll be asked to specify if you're registering as a developer or an admin.</li>
-            <li><strong>Login:</strong> Use your credentials to access the system.</li>
-            <li><strong>Profile Management:</strong> Update your personal information and change your password as needed.</li>
-          </ul>
-        </SubSection>
-
-        <SubSection title="2. Project Management">
-          <ul className="list-disc list-inside pl-4">
-            <li><strong>Create a Project:</strong> As an admin, you can create new projects and assign them to developers.</li>
-            <li><strong>View Projects:</strong> See a list of all your assigned projects or, as an admin, all projects in your company.</li>
-            <li><strong>Update Project Status:</strong> Mark projects as in progress, completed, or archived.</li>
-          </ul>
-        </SubSection>
-
-        <SubSection title="3. Time Tracking">
-          <ul className="list-disc list-inside pl-4">
-            <li><strong>Start Timer:</strong> Begin tracking time for a specific project and development phase.</li>
-            <li><strong>Stop Timer:</strong> End the time tracking session.</li>
-            <li><strong>Log Time:</strong> Manually enter time spent on a task if you forgot to use the timer.</li>
-            <li><strong>View Time Logs:</strong> See a summary of time spent on different projects and phases.</li>
-          </ul>
-        </SubSection>
-
-        <SubSection title="4. Defect Logging">
-          <ul className="list-disc list-inside pl-4">
-            <li><strong>Log a Defect:</strong> Record defects you encounter, including type, description, and the phase where it was injected and removed.</li>
-            <li><strong>Update Defect Status:</strong> Mark defects as fixed or closed.</li>
-            <li><strong>View Defects:</strong> See a list of all defects for a specific project.</li>
-          </ul>
-        </SubSection>
-
-        <SubSection title="5. Data Visualization">
-          <ul className="list-disc list-inside pl-4">
-            <li><strong>Time Distribution:</strong> View charts showing how you've spent your time across different projects and development phases.</li>
-            <li><strong>Defect Trends:</strong> See visualizations of defect patterns in your projects.</li>
-          </ul>
-        </SubSection>
-
-        <SubSection title="6. Tutorial System">
-          <ul className="list-disc list-inside pl-4">
-            <li>Access in-app tutorials explaining PSP concepts and how to use the tool effectively.</li>
-            <li>Tutorials are unlocked progressively as you use the system.</li>
-          </ul>
-        </SubSection>
-      </Section>
-
       <Section title="PSP0 and PSP0.1 Overview">
         <p className="mb-4">Our tool focuses on implementing PSP0 and PSP0.1. Here's what each level entails:</p>
 
@@ -171,6 +104,87 @@ const AdminDashboard = () => {
           </li>
         </ol>
       </Section>
+      <Section title="Introduction to the System">
+        <p className="mb-4">
+          Welcome to the PSP Management Tool, designed to help you implement the Personal Software Process (PSP) in your software development work. This tool focuses on PSP0 and PSP0.1, providing a foundation for disciplined software development practices.
+        </p>
+        <p className="mb-4">
+          Our system is designed to accommodate both individual developers and small teams. In a team setting, the admin role can be filled by a team lead, product manager, project manager, or supervisor. It's important to note that an admin account is separate from a developer account, with distinct functionalities:
+        </p>
+        <ul className="list-disc list-inside mb-4 pl-4">
+          <li>Admins have oversight and management capabilities but cannot directly use developer features.</li>
+          <li>Developers have access to PSP tracking and implementation tools.</li>
+          <li>If an admin needs to use developer features (e.g., in a solo project or as part of the team), they must register a separate developer account.</li>
+        </ul>
+        <p className="mb-4">
+          Some functionalities are exclusive to admin accounts, such as creating projects and assigning them to developers. Similarly, certain features are only available to developer accounts, like time tracking and defect logging for assigned projects.
+        </p>
+        <p className="mb-4">
+          To log out of the system, simply click on the avatar icon located in the top left corner of the page. This will securely end your session and return you to the login screen.
+        </p>
+      </Section>
+
+      <Section title="System Overview">
+        <p className="mb-4">Our PSP Management Tool offers the following key functionalities:</p>
+        <ol className="list-decimal list-inside mb-4 pl-4">
+          <li>User Management</li>
+          <li>Project Management</li>
+          <li>Time Tracking</li>
+          <li>Defect Logging</li>
+          <li>Data Visualization</li>
+          <li>Tutorial System</li>
+        </ol>
+        <p>Let's explore how to use each of these features.</p>
+
+        <SubSection title="1. User Management">
+          <ul className="list-disc list-inside pl-4">
+            <li><strong>Registration:</strong> Sign up with your email, username, and password. You'll be asked to specify if you're registering as a developer or an admin.</li>
+            <li><strong>Login:</strong> Use your credentials to access the system.</li>
+            <li><strong>Profile Management:</strong> Update your personal information and change your password as needed.</li>
+          </ul>
+        </SubSection>
+
+        <SubSection title="2. Project Management">
+          <ul className="list-disc list-inside pl-4">
+            <li><strong>Create a Project:</strong> As an admin, you can create new projects and assign them to developers.</li>
+            <li><strong>View Projects:</strong> See a list of all your assigned projects or, as an admin, all projects in your company.</li>
+            <li><strong>Update Project Status:</strong> Mark projects as in progress, completed, or archived.</li>
+          </ul>
+        </SubSection>
+
+        <SubSection title="3. Time Tracking">
+          <ul className="list-disc list-inside pl-4">
+            <li><strong>Start Timer:</strong> Begin tracking time for a specific project and development phase.</li>
+            <li><strong>Stop Timer:</strong> End the time tracking session.</li>
+            <li><strong>Log Time:</strong> Manually enter time spent on a task if you forgot to use the timer.</li>
+            <li><strong>View Time Logs:</strong> See a summary of time spent on different projects and phases.</li>
+          </ul>
+        </SubSection>
+
+        <SubSection title="4. Defect Logging">
+          <ul className="list-disc list-inside pl-4">
+            <li><strong>Log a Defect:</strong> Record defects you encounter, including type, description, and the phase where it was injected and removed.</li>
+            <li><strong>Update Defect Status:</strong> Mark defects as fixed or closed.</li>
+            <li><strong>View Defects:</strong> See a list of all defects for a specific project.</li>
+          </ul>
+        </SubSection>
+
+        <SubSection title="5. Data Visualization">
+          <ul className="list-disc list-inside pl-4">
+            <li><strong>Time Distribution:</strong> View charts showing how you've spent your time across different projects and development phases.</li>
+            <li><strong>Defect Trends:</strong> See visualizations of defect patterns in your projects.</li>
+          </ul>
+        </SubSection>
+
+        <SubSection title="6. Tutorial System">
+          <ul className="list-disc list-inside pl-4">
+            <li>Access in-app tutorials explaining PSP concepts and how to use the tool effectively.</li>
+            <li>Tutorials are unlocked progressively as you use the system.</li>
+          </ul>
+        </SubSection>
+      </Section>
+
+      
 
       <div className="mt-8 text-center">
         <p className="italic">
