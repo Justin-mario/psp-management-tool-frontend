@@ -35,7 +35,7 @@ const DeveloperSignUp = () => {
 
 
   return (
-    <>
+    <div className='max-w-[768px]'>
         <form onSubmit={handleSubmit}>
             <div className='flex flex-col'>
                 <div className='lg:mb-10 mb-6'>
@@ -85,7 +85,7 @@ const DeveloperSignUp = () => {
                 }
             }}
         />
-    </>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 const AdminDashboard = () => {
   return (
-    <div>
+    <div className='max-w-[992px]'>
         Write up coming soon
     </div>
   )

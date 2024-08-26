@@ -20,7 +20,7 @@ const DeveloperDefectPage = () => {
         dispatch(developerGetProjects())
       }, [dispatch])
   return (
-    <>
+    <div className='max-w-[992px]'>
         <h2 className='text-2xl text-primeColor font-bold mb-8'>DEFECTS</h2>
         <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -53,7 +53,7 @@ const DeveloperDefectPage = () => {
                 </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

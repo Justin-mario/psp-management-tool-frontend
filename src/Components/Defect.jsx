@@ -3,7 +3,7 @@ import { defectStatusChoices, defectTypeChoices, projectPhases } from './DefectC
 
 const Defect = (props) => {
   return (
-    <>
+    <div className='max-w-[768px]'>
         <h2 className=' text-3xl font-bold mb-7'>{props.title}</h2>
         <form onSubmit={props.onSubmit}>
             <div className='flex flex-col'>
@@ -77,7 +77,7 @@ const Defect = (props) => {
                 </div>
             </div>
         </form>
-    </>
+    </div>
   )
 }
 

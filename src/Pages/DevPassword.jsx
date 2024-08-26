@@ -27,8 +27,8 @@ const DevPassword = () => {
     // }, [])
 
   return (
-    <div className='w-[50%] md:mx-auto pt-[10rem] px-4 md:px-0'>
-        <h3 className='text-3xl font-bold mb-7'>Developers' Sign In page</h3>
+    <div className='max-w-[992px]'>
+        <h3 className='text-3xl font-bold mb-7'>Developers' Change Password</h3>
         <form onSubmit={handleSubmit}>
             <div className='flex flex-col'>
                 <div className='lg:mb-10 mb-6'>
