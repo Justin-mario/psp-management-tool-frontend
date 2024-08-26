@@ -125,12 +125,11 @@
 
 // export default AdminDashboard
 import React from 'react';
-import { Book, Users, Clock, Bug, BarChart2, Graduation } from 'lucide-react';
 
-const UserGuideSection = ({ icon: Icon, title, children }) => (
+const UserGuideSection = ({ icon, title, children }) => (
   <div className="mb-6">
     <h2 className="flex items-center text-xl font-semibold mb-2">
-      <Icon className="mr-2" size={24} />
+      <span className="mr-2 text-2xl">{icon}</span>
       {title}
     </h2>
     {children}
@@ -162,7 +161,7 @@ const AdminDashboard = () => {
         </ol>
       </div>
 
-      <UserGuideSection icon={Users} title="User Management">
+      <UserGuideSection icon="👥" title="User Management">
         <ul className="list-disc list-inside">
           <li><strong>Registration:</strong> Sign up with your email, username, and password. You'll be asked to specify if you're registering as a developer or an admin.</li>
           <li><strong>Login:</strong> Use your credentials to access the system.</li>
@@ -170,7 +169,7 @@ const AdminDashboard = () => {
         </ul>
       </UserGuideSection>
 
-      <UserGuideSection icon={Book} title="Project Management">
+      <UserGuideSection icon="📚" title="Project Management">
         <ul className="list-disc list-inside">
           <li><strong>Create a Project:</strong> As an admin, you can create new projects and assign them to developers.</li>
           <li><strong>View Projects:</strong> See a list of all your assigned projects or, as an admin, all projects in your company.</li>
@@ -178,7 +177,7 @@ const AdminDashboard = () => {
         </ul>
       </UserGuideSection>
 
-      <UserGuideSection icon={Clock} title="Time Tracking">
+      <UserGuideSection icon="⏱️" title="Time Tracking">
         <ul className="list-disc list-inside">
           <li><strong>Start Timer:</strong> Begin tracking time for a specific project and development phase.</li>
           <li><strong>Stop Timer:</strong> End the time tracking session.</li>
@@ -187,7 +186,7 @@ const AdminDashboard = () => {
         </ul>
       </UserGuideSection>
 
-      <UserGuideSection icon={Bug} title="Defect Logging">
+      <UserGuideSection icon="🐛" title="Defect Logging">
         <ul className="list-disc list-inside">
           <li><strong>Log a Defect:</strong> Record defects you encounter, including type, description, and the phase where it was injected and removed.</li>
           <li><strong>Update Defect Status:</strong> Mark defects as fixed or closed.</li>
@@ -195,14 +194,14 @@ const AdminDashboard = () => {
         </ul>
       </UserGuideSection>
 
-      <UserGuideSection icon={BarChart2} title="Data Visualization">
+      <UserGuideSection icon="📊" title="Data Visualization">
         <ul className="list-disc list-inside">
           <li><strong>Time Distribution:</strong> View charts showing how you've spent your time across different projects and development phases.</li>
           <li><strong>Defect Trends:</strong> See visualizations of defect patterns in your projects.</li>
         </ul>
       </UserGuideSection>
 
-      <UserGuideSection icon={Graduation} title="Tutorial System">
+      <UserGuideSection icon="🎓" title="Tutorial System">
         <ul className="list-disc list-inside">
           <li>Access in-app tutorials explaining PSP concepts and how to use the tool effectively.</li>
           <li>Tutorials are unlocked progressively as you use the system.</li>
