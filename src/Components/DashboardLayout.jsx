@@ -13,7 +13,7 @@ const DashboardLayout = (props) => {
         <div className="header">
           <TopNav/>
         </div>
-        <div>
+        <div className='p-6'>
           <Outlet/>
         </div>
       </div>
