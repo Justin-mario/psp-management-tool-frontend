@@ -21,10 +21,10 @@ const TopNav = () => {
     const handleLogout = () => {
         if(devInfo){
             dispatch(developerlogout())
-            navigate("/developer-signin")
+            navigate("/")
         }else {
             dispatch(adminlogout())
-            navigate("/signin")
+            navigate("/")
         }
     }
   

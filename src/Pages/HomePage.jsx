@@ -19,6 +19,8 @@ const HomePage = () => {
     // console.log("You clicked on the submit button")
     if (!companyName && !username && !email && !password) {
       toast.error("Please fill all fields correctly");
+    }else if(password.length !== 6){
+      toast.error("Password cannot be less than 8 characters");
     } else {
       let user = { username, email, password, companyName };
       dispatch(registerAdmin(user));
@@ -26,7 +28,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    console.log("Admin Info:", adminInfo);
+    // console.log("Admin Info:", adminInfo);
 
     if (adminInfo && typeof adminInfo === "object") {
       if (
@@ -45,12 +47,13 @@ const HomePage = () => {
         navigate("/dashboard");
       }
     } else {
-      console.error("Admin Info is not a valid object:", adminInfo);
+      // console.error("Admin Info is not a valid object:", adminInfo);
     }
   }, [adminInfo, navigate]);
 
   return (
     <div className="w-[50%] md:mx-auto pt-[10rem] px-4 md:px-0">
+      <h3 className='text-3xl font-bold mb-7'>PSP Management Tool</h3>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col">
           <div className="lg:mb-10 mb-6">
